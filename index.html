@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumple, Sofía 🎤</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000814; /* Azul muy oscuro */
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Luna grande en el fondo */
+        .luna {
+            position: absolute;
+            top: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, #ffffff 30%, #d9d9d9 70%);
+            border-radius: 50%;
+            box-shadow: 0 0 80px #ffffff88;
+            z-index: -2; /* Detrás de todo */
+        }
+
+        /* Rayos eléctricos en CSS */
+        .rayo {
+            position: absolute;
+            width: 3px;
+            height: 120px;
+            background: #50aaff;
+            opacity: 0.7;
+            filter: blur(1px);
+            animation: relampago 0.5s infinite alternate;
+            z-index: -1; /* Detrás del texto pero encima de la luna */
+        }
+
+        /* Posiciones aleatorias de los rayos */
+        .rayo:nth-child(1) { top: 30%; left: 15%; animation-delay: 0.2s; }
+        .rayo:nth-child(2) { top: 45%; left: 70%; animation-delay: 0.4s; }
+        .rayo:nth-child(3) { top: 65%; left: 40%; animation-delay: 0.3s; }
+        .rayo:nth-child(4) { top: 20%; left: 85%; animation-delay: 0.5s; }
+        .rayo:nth-child(5) { top: 55%; left: 10%; animation-delay: 0.6s; }
+
+        /* Animación de los rayos */
+        @keyframes relampago {
+            from { height: 120px; opacity: 0.7; transform: scaleY(1); }
+            to { height: 180px; opacity: 1; transform: scaleY(1.2); }
+        }
+
+        h1 {
+            color: #50aaff;
+            font-size: 3em;
+            text-shadow: 0 0 15px #50aaff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Imagen de Trueno */
+        .trueno-img {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 3px solid #50aaff;
+        }
+
+        /* Botón */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #50aaff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1e90ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Luna grande en el fondo -->
+    <div class="luna"></div>
+    
+    <!-- Rayos generados con CSS -->
+    <div class="rayo"></div>
+    <div class="rayo"></div>
+    <div class="rayo"></div>
+    <div class="rayo"></div>
+    <div class="rayo"></div>
+    
+    <h1>🎤 ¡Feliz Cumple, SofíaPPaiiii! 🎉</h1>
+    <p></p>
+    
+    <img class="trueno-img" src="https://cdns-images.dzcdn.net/images/artist/40817904aa568c1b2a7335076ca7099b/1900x1900-000000-80-0-0.jpg" alt="Trueno Cantante">
+    
+    <p>Espero que disfrutes tu dia, mi regalo no ha llegado a tiempo, al menos uno de ellos no, el otro si, espero que lo disfrutes sofisoofff. Por cierto pincha debajo que te gustará ;)</p>
+    
+    <a class="btn" href="https://www.youtube.com/watch?v=kmVAjlb7Ysg">🎶 Escuchar Trueno</a>
+</body>
+</html>
